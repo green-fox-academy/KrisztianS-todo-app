@@ -19,9 +19,8 @@ class TodoController():
             self.view.usage()
         elif self.get_arguments() == "l":
             self.view.printer(self.model.work_list)
-            #read and print todos.txt
         elif self.get_arguments() == "a":
-            pass
+            self.model.add_todo()
             #open w todos.txt add new todo line
         elif self.get_arguments() == "r":
             pass

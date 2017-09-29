@@ -1,3 +1,5 @@
+import sys
+
 class TodoModel():
     
     def __init__(self):
@@ -7,3 +9,8 @@ class TodoModel():
 
         for line in self.scanned_text:
             self.work_list.append(line)
+    
+    def add_todo(self):
+        self.todo_expression = str(sys.argv[4:])
+        self.todo_file = open("todo.txt", "w")
+        self.todo_file.write(self.todo_expression)

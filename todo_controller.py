@@ -21,7 +21,6 @@ class TodoController():
             self.view.printer(self.model.work_list)
         elif self.get_arguments() == "a":
             self.model.add_todo()
-            #open w todos.txt add new todo line
         elif self.get_arguments() == "r":
             pass
             #open w todos, delete by index

@@ -1,10 +1,8 @@
-from todo_model import TodoModel
-
 class TodoView():
     
     def printer(self, todo):
-        self.todo_work = TodoModel()
-        for element in self.todo_work.work_list:
+        
+        for element in todo:
             if element[0] == "0":
                 print("[ ] " + element[2:])
             elif element[0] == "1":

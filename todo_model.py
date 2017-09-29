@@ -11,6 +11,6 @@ class TodoModel():
             self.work_list.append(line)
     
     def add_todo(self):
-        self.todo_expression = str(sys.argv[4:])
-        self.todo_file = open("todo.txt", "w")
-        self.todo_file.write(self.todo_expression)
+        self.todo_expression = str(sys.argv[2]) 
+        self.todo_file = open("todo.txt", "a")
+        self.todo_file.write("\n0 " + self.todo_expression)
